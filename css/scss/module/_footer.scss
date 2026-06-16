@@ -1,0 +1,14 @@
+@use "../setting/colors" as *;
+@use "../setting/fonts" as *;
+@use "../mixin/responsive" as *;
+
+.footer {
+  background-color: $color_main;
+  padding: 8px;
+
+  &__copyright {
+    color: $color_white;
+    font-size: 0.875rem;
+    text-align: center;
+  }
+}

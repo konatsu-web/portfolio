@@ -1,0 +1,53 @@
+@use "../setting/colors" as *;
+@use "../setting/fonts" as *;
+@use "../mixin/responsive" as *;
+
+.contact {
+  padding-top: 40px;
+  padding-bottom: 80px;
+  background-color: $color_main;
+
+  @include responsive(pc) {
+    padding-top: 80px;
+  }
+
+  &__inner {
+  }
+
+  .sec-title {
+    color: $color_white;
+    // text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+
+  &__item {
+    a {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background-color: $color_white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: 0.5s ease;
+
+      &:hover {
+        box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
+        transform: translateY(-4px);
+        opacity: 1;
+      }
+    }
+
+    i {
+      font-size: 2rem;
+    }
+  }
+}

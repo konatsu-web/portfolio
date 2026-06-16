@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <!-- 基本設定 -->
+    <!-- <meta name="robots" content="noindex,nofollow"> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- タイトル・説明 -->
+    <title>Natsu Portfolio | Web制作ポートフォリオ</title>
+    <meta name="description" content="Webサイト制作の実績やスキルを紹介するポートフォリオサイトです。HTML・CSS・JavaScript・WordPressを用いた制作事例を掲載しています。">
+
+    <!-- OGP -->
+    <meta property="og:title" content="Natsu Portfolio">
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="Webサイト制作の実績やスキルを紹介するポートフォリオサイトです。HTML・CSS・JavaScript・WordPressを用いた制作事例を掲載しています。">
+    <meta property="og:url" content=""><!-- このページのURLを設定してください。 -->
+    <meta property="og:site_name" content="Natsu Portfolio">
+    <meta property="og:image" content="images/ogp_image.jpg">
+
+    <!-- ファビコン -->
+    <link rel="icon" href="" type="image/x-icon">
+    <link rel="apple-touch-icon" href="">
+
+    <!-- Google Fonts -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/my-reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- SlickのCSS -->
+
+</head>
+
+<body>
+
+    <header class="header" id="top">
+        <div class="header__inner">
+            <h1 class="header__logo">
+                <a href="/" class="header__logo-link">
+                    Natsu Portfolio
+                </a>
+            </h1>
+            <!-- ハンバーガー -->
+            <button class="hamburger js-hamburger" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <!-- ナビ -->
+            <nav class="header__nav js-nav">
+                <div class="header__nav-inner">
+                    <ul class="header__menu">
+                        <li><a href="#top">Home</a></li>
+                        <li><a href="#works">Works</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="fv">
+            <div class="fv__inner">
+                <p class="fv__lead">Web Creator</p>
+
+                <div class="fv__title">
+                    Natsu Portfolio
+                </div>
+
+                <p class="fv__text">
+                    HTML / CSS / JavaScript / WordPress
+                </p>
+
+                <a href="#works" class="fv__btn">
+                    View Works
+                </a>
+            </div>
+        </section>
+
+        <section class="works" id="works">
+            <div class="works__inner container">
+
+                <h2 class="sec-title">Works</h2>
+
+                <ul class="works__cards">
+
+                    <li class="works-card">
+                        <a href="#">
+                            <div class="works-card__img">
+                                <img src="./images/img/img_works-famm-coffeeshop.webp" alt="Famm COFFEE SHOPのトップページ"
+                                    width="1200" height="900" loading="lazy">
+                            </div>
+
+                            <div class="works-card__body">
+                                <h3 class="works-card__title">Famm COFFEE SHOP</h3>
+                                <p class="works-card__text">
+                                    Fammスクールの講座で制作したコーヒーショップのデモサイト
+                                </p>
+                                <p class="works-card__skill">
+                                    HTML / CSS / JavaScript
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="works-card">
+                        <a href="#">
+                            <div class="works-card__img">
+                                <img src="./images/img/img_works-irodori.webp" alt="Irodoriのトップページ" width="1200"
+                                    height="900" loading="lazy">
+                            </div>
+
+                            <div class="works-card__body">
+                                <h3 class="works-card__title">Irodori</h3>
+                                <p class="works-card__text">
+                                    シーグラスアクセサリーをテーマにしたオリジナルデモサイト
+                                </p>
+                                <p class="works-card__skill">
+                                    HTML / CSS / JavaScript
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="about__inner container">
+                <h2 class="sec-title">ABOUT</h2>
+                <div class="about__wrap">
+                    <img class="about__img" src="./images/img/my-image.webp" alt="ポートレート" width="1254" height="1254"
+                        loading="lazy">
+                    <div class="about__content">
+                        <p>
+                            はじめまして。Webコーダーのナツ（小野寺奈津子）です。
+                        </p>
+                        <p>
+                            ママ向けWebデザインスクールを卒業後、Web制作を学び、現在はHTML・CSS・JavaScriptを中心にサイト制作に取り組んでいます。
+                        </p>
+                        <p>
+                            シンプルで見やすいコーディングを心がけ、スマートフォンにも対応したWebサイト制作を行っています。WordPressの基本的な操作や既存サイトの修正にも対応可能です。
+                        </p>
+                        <p>
+                            また、Canvaを使用したバナー制作や画像制作にも取り組んでおり、デザインについても継続して学習を続けています。</p>
+                        <p>
+                            一つひとつのご依頼に丁寧に向き合い、お客様に安心してご相談いただけるパートナーを目指しています。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <div class="skills__inner container">
+                <h2 class="sec-title">Skills</h2>
+
+                <ul class="skills__cards">
+
+                    <li class="skills-card">
+                        <div class="skills-card__icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <div class="skills-card__content">
+                            <h3 class="skills-card__title">HTML / CSS / Sass</h3>
+                            <p class="skills-card__text">
+                                セマンティックなマークアップを意識し、レスポンシブ対応や保守性を考慮したコーディングを行います。
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="skills-card">
+                        <div class="skills-card__icon">
+                            <i class="fa-brands fa-js"></i>
+                        </div>
+                        <div class="skills-card__content">
+                            <h3 class="skills-card__title">JavaScript</h3>
+                            <p class="skills-card__text">
+                                ハンバーガーメニューやスライダーなど、基本的な動きの実装が可能です。
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="skills-card">
+                        <div class="skills-card__icon">
+                            <i class="fa-brands fa-wordpress"></i>
+                        </div>
+                        <div class="skills-card__content">
+                            <h3 class="skills-card__title">WordPress</h3>
+                            <p class="skills-card__text">
+                                オリジナルテーマの制作経験があり、基本的なサイト構築や既存サイトの修正・カスタマイズに対応できます。
+                            </p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="contact__inner container">
+                <h2 class="sec-title">Contact</h2>
+                <ul class="contact__list">
+                    <li class="contact__item">
+                        <a href="https://x.com/konatsu_Web33" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="contact__item">
+                        <a href="mailto:konatsu.room@gmail.com">
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__copyright">
+            &copy; 2026 Natsu Portfolio all rights reserved.
+        </p>
+
+        <!-- Back to Top ボタン -->
+        <button class="back-to-top" id="toTop" aria-label="ページトップへ戻る">
+            <span></span>
+        </button>
+
+    </footer>
+
+    <!-- js -->
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

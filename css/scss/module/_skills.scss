@@ -1,0 +1,78 @@
+@use "../setting/colors" as *;
+@use "../setting/fonts" as *;
+@use "../mixin/responsive" as *;
+
+.skills {
+  padding-top: 40px;
+  padding-bottom: 80px;
+
+  @include responsive(pc) {
+    padding-top: 80px;
+  }
+
+  &__inner {
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    padding: 40px 0;
+
+    @include responsive(pc) {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 0;
+    }
+  }
+
+  &-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+    @include responsive(pc) {
+      width: 32%;
+      gap: 16px;
+    }
+
+    &__icon {
+      min-width: 70px;
+      min-height: 70px;
+      border-radius: 50%;
+      background: $color_primary;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include responsive(pc) {
+        min-width: 90px;
+        min-height: 90px;
+      }
+
+      i {
+        font-size: 2rem;
+        color: $color_txt;
+      }
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    &__title {
+      font-size: 1.125rem;
+      font-weight: $demi-bold;
+    }
+
+    &__text {
+      font-size: 0.875rem;
+      line-height: 1.5;
+    }
+  }
+}

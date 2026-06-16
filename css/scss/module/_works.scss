@@ -1,0 +1,74 @@
+@use "../setting/colors" as *;
+@use "../setting/fonts" as *;
+@use "../mixin/responsive" as *;
+
+.works {
+  padding-top: 40px;
+  padding-bottom: 80px;
+  background-color: $color_bg;
+
+  @include responsive(pc) {
+    padding-top: 80px;
+  }
+
+  &__inner {
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @include responsive(pc) {
+      flex-direction: row;
+    }
+  }
+
+  &-card {
+    padding: 24px 24px 40px;
+    background-color: $color_white;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.5s ease;
+    border-radius: 40px;
+
+    &:hover {
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
+      transform: translateY(-4px);
+    }
+
+    a {
+      display: flex;
+      flex-direction: column;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    &__img {
+    }
+
+    &__body {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    &__title {
+      font-size: 1.25rem;
+      font-weight: $bold;
+      text-align: center;
+    }
+
+    &__text {
+      line-height: 1.5;
+    }
+
+    &__skill {
+      color: $color_secondary;
+      font-size: 0.875rem;
+      font-weight: $demi-bold;
+    }
+  }
+}

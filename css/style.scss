@@ -1,0 +1,25 @@
+// base
+@use "./scss/base/base";
+
+// mixin
+@use "./scss/mixin/responsive";
+
+// setting
+@use "./scss/setting/colors";
+@use "./scss/setting/fonts";
+
+// parts
+@use "./scss/parts/breadcrumb";
+@use "./scss/parts/sec-title";
+@use "./scss/parts/back-to-top";
+
+// module
+@use "./scss/module/header";
+@use "./scss/module/footer";
+@use "./scss/module/fv";
+@use "./scss/module/works";
+@use "./scss/module/about";
+@use "./scss/module/skills";
+@use "./scss/module/contact";
+
+// page
