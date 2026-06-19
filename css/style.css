@@ -56,8 +56,13 @@ a {
   }
 }
 .container {
-  max-width: 335px;
+  max-width: 280px;
   margin: 0 auto;
+}
+@media (width >= 375px) {
+  .container {
+    max-width: 335px;
+  }
 }
 @media (width >= 768px) {
   .container {
@@ -317,7 +322,7 @@ body.is-open {
 
 .fv {
   width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -327,37 +332,86 @@ body.is-open {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 50px 20px 80px;
   background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+@media (width >= 1024px) {
+  .fv {
+    padding: 50px 0 80px;
+  }
+}
+.fv__bg-text {
+  position: absolute;
+  font-size: 12rem;
+  font-weight: 700;
+  line-height: 1;
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+  color: #042f4b;
+  opacity: 0.03;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+@media (width >= 1024px) {
+  .fv__bg-text {
+    font-size: 18rem;
+  }
+}
+.fv__bg-text--1 {
+  top: 32px;
+  left: 0;
+}
+.fv__bg-text--2 {
+  right: 0;
+  bottom: 32px;
+}
+.fv__inner {
+  width: 100%;
+  height: 100%;
 }
 .fv__lead {
   color: #ED1250;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
-@media (width >= 1024px) {
-  .fv__lead {
-    font-size: 1rem;
-  }
-}
 .fv__title {
   margin-top: 16px;
-  font-size: 3rem;
+  font-size: 1.25rem;
+  line-height: 1.2;
   font-weight: 600;
   color: #042f4b;
 }
+@media (width >= 375px) {
+  .fv__title {
+    font-size: 1.5rem;
+  }
+}
+@media (width >= 768px) {
+  .fv__title {
+    font-size: 2.5rem;
+  }
+}
 @media (width >= 1024px) {
   .fv__title {
-    font-size: 6rem;
+    font-size: 3.5rem;
   }
 }
 .fv__text {
   margin-top: 24px;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.8;
   color: #042f4b;
+}
+@media (width >= 1024px) {
+  .fv__text {
+    font-size: 1.125rem;
+  }
 }
 .fv__btn {
   display: -webkit-inline-box;
@@ -374,7 +428,7 @@ body.is-open {
   border-radius: 23px;
   background-color: #ED1250;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 600;
   -webkit-transition: 0.3s;
   transition: 0.3s;

@@ -60,10 +60,14 @@ a {
 }
 
 .container {
-  max-width: 335px;
+  max-width: 280px;
   margin: 0 auto;
 
-  @include responsive(tablet){
+  @include responsive(sp) {
+    max-width: 335px;
+  }
+
+  @include responsive(tablet) {
     max-width: 560px;
   }
 
