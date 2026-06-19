@@ -1,0 +1,93 @@
+@use "../setting/colors" as *;
+@use "../setting/fonts" as *;
+@use "../mixin/responsive" as *;
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+
+  background-color: $color_white;
+  font-family: $font-base;
+  color: $color_txt;
+  font-size: 1rem;
+  letter-spacing: 0;
+  line-height: 1;
+  font-style: normal;
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a {
+  font-family: $font-base;
+  color: $color_txt;
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  font-style: normal;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: block;
+}
+
+@media (any-hover: hover) {
+  a,
+  button {
+    opacity: 1;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+    &:hover {
+      opacity: 0.6;
+      text-decoration-line: underline;
+    }
+  }
+}
+
+.container {
+  max-width: 280px;
+  margin: 0 auto;
+
+  @include responsive(sp) {
+    max-width: 335px;
+  }
+
+  @include responsive(tablet) {
+    max-width: 560px;
+  }
+
+  @include responsive(pc) {
+    max-width: 960px;
+  }
+}
+
+.pc-hidden {
+  display: block;
+
+  @include responsive(pc) {
+    display: none;
+  }
+}
+
+.sp-hidden {
+  display: none;
+
+  @include responsive(pc) {
+    display: block;
+  }
+}
